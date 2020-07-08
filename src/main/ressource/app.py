@@ -1,17 +1,17 @@
 from flask import Flask, jsonify, make_response, request, render_template
 from flask_cors import CORS
-import psycopg2
+# import psycopg2
 import json
 
 #instance flask
 app = Flask(__name__)
 CORS(app)
-conn = psycopg2.connect(user="postgres",
-                            password="superUser123",
-                            host='192.168.0.21',
-                            port="5433",
-                            database="mydb")
-cursor = conn.cursor()
+# conn = psycopg2.connect(user="postgres",
+#                             password="superUser123",
+#                             host='192.168.0.21',
+#                             port="5433",
+#                             database="mydb")
+# cursor = conn.cursor()
 @app.route('/')
 def main():
    """Render an HTML template and return"""

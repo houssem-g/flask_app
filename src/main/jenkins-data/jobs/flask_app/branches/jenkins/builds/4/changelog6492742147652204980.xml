@@ -1,0 +1,9 @@
+commit 366b5c375ad642a6749abcb97c6e3a8907f3e40a
+tree 314ad24743288ae94a9b630de604894203a90012
+parent 7bf35f1cd4d4a035bbb02c82e6d1c67a9b2aad32
+author houssem-g <56471361+houssem-g@users.noreply.github.com> 2020-06-21 15:30:59 +0200
+committer houssem-g <56471361+houssem-g@users.noreply.github.com> 2020-06-21 15:30:59 +0200
+
+    Added Jenkinsfile
+
+:100644 100644 959ec46c9d1f02315af341368c271701f9a3c5c5 8b4ec42b748af18c1474f63d650dcb17467e89c2 M	Jenkinsfile

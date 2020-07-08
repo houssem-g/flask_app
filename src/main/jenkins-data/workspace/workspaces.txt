@@ -1,0 +1,4 @@
+flask_app/jenkins
+flask_app_jenkins
+flask_app/master
+flask_app_master

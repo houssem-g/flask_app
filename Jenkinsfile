@@ -1,11 +1,5 @@
 pipeline {
-  agent {
-    docker {
-      image 'maven:3-alpine'
-      args '-v /root/.m2:/root/.m2'
-    }
-
-  }
+  agent any
   stages {
     stage('SCM') {
       steps {
@@ -14,14 +8,15 @@ pipeline {
     }
 
     stage('build') {
-      steps {
-        sh 'mvn -B -DskipTests clean package'
-      }
-    }
+      agent {
+        docker {
+          image 'maven:3-alpine'
+          args '-v /root/.m2/repository:/root/.m2/repository'
+        }
 
-    stage('Test') {
+      }
       steps {
-        sh 'mvn test'
+        sh 'mvn clean compile'
       }
     }
 
