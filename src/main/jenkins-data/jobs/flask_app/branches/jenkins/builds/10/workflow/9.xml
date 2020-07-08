@@ -1,0 +1,49 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<Tag plugin="workflow-support@3.5">
+  <node class="cps.n.StepEndNode" plugin="workflow-cps@2.80">
+    <parentIds>
+      <string>8</string>
+    </parentIds>
+    <id>9</id>
+    <startId>5</startId>
+  </node>
+  <actions>
+    <wf.a.TimingAction plugin="workflow-api@2.40">
+      <startTime>1594242280089</startTime>
+    </wf.a.TimingAction>
+    <wf.a.ErrorAction plugin="workflow-api@2.40">
+      <error class="java.lang.Exception">
+        <detailMessage>Resume after a restart not supported for non-blocking synchronous steps</detailMessage>
+        <stackTrace>
+          <trace>org.jenkinsci.plugins.workflow.steps.SynchronousNonBlockingStepExecution.onResume(SynchronousNonBlockingStepExecution.java:75)</trace>
+          <trace>org.jenkinsci.plugins.workflow.flow.FlowExecutionList$ItemListenerImpl$1.onSuccess(FlowExecutionList.java:185)</trace>
+          <trace>org.jenkinsci.plugins.workflow.flow.FlowExecutionList$ItemListenerImpl$1.onSuccess(FlowExecutionList.java:180)</trace>
+          <trace>com.google.common.util.concurrent.Futures$6.run(Futures.java:975)</trace>
+          <trace>com.google.common.util.concurrent.MoreExecutors$SameThreadExecutorService.execute(MoreExecutors.java:253)</trace>
+          <trace>com.google.common.util.concurrent.ExecutionList$RunnableExecutorPair.execute(ExecutionList.java:149)</trace>
+          <trace>com.google.common.util.concurrent.ExecutionList.execute(ExecutionList.java:134)</trace>
+          <trace>com.google.common.util.concurrent.AbstractFuture.set(AbstractFuture.java:170)</trace>
+          <trace>com.google.common.util.concurrent.SettableFuture.set(SettableFuture.java:53)</trace>
+          <trace>org.jenkinsci.plugins.workflow.cps.CpsFlowExecution$5.onSuccess(CpsFlowExecution.java:1011)</trace>
+          <trace>org.jenkinsci.plugins.workflow.cps.CpsFlowExecution$5.onSuccess(CpsFlowExecution.java:989)</trace>
+          <trace>org.jenkinsci.plugins.workflow.cps.CpsFlowExecution$4$1.run(CpsFlowExecution.java:907)</trace>
+          <trace>org.jenkinsci.plugins.workflow.cps.CpsVmExecutorService$1.run(CpsVmExecutorService.java:38)</trace>
+          <trace>java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)</trace>
+          <trace>java.util.concurrent.FutureTask.run(FutureTask.java:266)</trace>
+          <trace>hudson.remoting.SingleLaneExecutorService$1.run(SingleLaneExecutorService.java:131)</trace>
+          <trace>jenkins.util.ContextResettingExecutorService$1.run(ContextResettingExecutorService.java:28)</trace>
+          <trace>jenkins.security.ImpersonatingExecutorService$1.run(ImpersonatingExecutorService.java:59)</trace>
+          <trace>java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)</trace>
+          <trace>java.util.concurrent.FutureTask.run(FutureTask.java:266)</trace>
+          <trace>java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)</trace>
+          <trace>java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)</trace>
+          <trace>java.lang.Thread.run(Thread.java:748)</trace>
+        </stackTrace>
+        <suppressedExceptions class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
+          <c class="list"/>
+          <list reference="../c"/>
+        </suppressedExceptions>
+      </error>
+    </wf.a.ErrorAction>
+  </actions>
+</Tag>

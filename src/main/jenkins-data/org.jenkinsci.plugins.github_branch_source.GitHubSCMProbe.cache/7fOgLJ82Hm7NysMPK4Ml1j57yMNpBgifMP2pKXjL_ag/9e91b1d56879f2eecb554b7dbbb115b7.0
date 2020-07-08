@@ -1,24 +1,24 @@
-https://api.github.com/repos/houssem-g/flask_app
+https://api.github.com/user
 GET
 2
 Authorization: Basic aG91c3NlbTphZWYwNzA3NTk4MWY0Zjk4OWM5YWNkNGJlM2Y4NTJhNjYxNDE4MTkz
 Accept-Encoding: gzip
 HTTP/1.1 200 OK
 29
-Date: Wed, 08 Jul 2020 21:04:46 GMT
+Date: Wed, 08 Jul 2020 20:06:14 GMT
 Content-Type: application/json; charset=utf-8
 Transfer-Encoding: chunked
 Server: GitHub.com
 Status: 200 OK
 X-RateLimit-Limit: 5000
-X-RateLimit-Remaining: 4983
+X-RateLimit-Remaining: 4997
 X-RateLimit-Reset: 1594242342
 Cache-Control: private, max-age=60, s-maxage=60
 Vary: Accept, Authorization, Cookie, X-GitHub-OTP
-ETag: W/"95927c963e26be9bc1bf250e9ba1a2ac"
-Last-Modified: Mon, 22 Jun 2020 09:24:12 GMT
+ETag: W/"6cdf38f4d8febaa950485465f8b61660"
+Last-Modified: Thu, 02 Jul 2020 12:46:25 GMT
 X-OAuth-Scopes: admin:enterprise, admin:gpg_key, admin:org, admin:org_hook, admin:repo_hook, gist, notifications, read:packages, repo, user, workflow, write:discussion, write:packages
-X-Accepted-OAuth-Scopes: repo
+X-Accepted-OAuth-Scopes: 
 X-GitHub-Media-Type: github.v3; format=json
 Access-Control-Expose-Headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset
 Access-Control-Allow-Origin: *
@@ -31,9 +31,9 @@ Content-Security-Policy: default-src 'none'
 Vary: Accept-Encoding, Accept, X-Requested-With
 Content-Encoding: gzip
 Vary: Accept-Encoding
-X-GitHub-Request-Id: CB9B:F797:13A4F9E:17C45C0:5F0634ED
-OkHttp-Sent-Millis: 1594242284826
-OkHttp-Received-Millis: 1594242285066
+X-GitHub-Request-Id: D9CF:6BA1:1902117:1E43155:5F062736
+OkHttp-Sent-Millis: 1594238774383
+OkHttp-Received-Millis: 1594238774592
 
 TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
 2

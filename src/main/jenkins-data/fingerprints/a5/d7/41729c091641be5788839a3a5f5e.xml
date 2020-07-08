@@ -10,7 +10,7 @@
     </entry>
     <entry>
       <string>flask_app/jenkins</string>
-      <ranges>1-9</ranges>
+      <ranges>1-10</ranges>
     </entry>
   </usages>
   <facets/>
