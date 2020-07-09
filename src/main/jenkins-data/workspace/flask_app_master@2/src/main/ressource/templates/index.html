@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+
+  <head>
+    <link rel="stylesheet" href="static/styles.css" />
+    <title>Manage peaks locations</title>
+  </head>
+  <body>
+    <h1>peaks locations!</h1>
+    <button style='margin-left: 80%; margin-bottom: 20px;'><a href = "http://127.0.0.1:5000/mapView">Map View</a></button>
+    <table id="myTable" style="width:100%">
+    </table>
+    <div style= "display: flex; justify-content: space-between; max-width: 80%; margin: 0 auto; padding: 10px 0;">
+        <button id="getMethod" type="button">
+            GET
+        </button>
+        <button id="geo" type="button" onclick="openWindowBounding()">
+            Bounding Box
+        </button>
+        <button id="postMethod" type="button" onclick="openWindow()">
+            POST
+        </button>
+        <button id="putMethod" type="button" onclick="openWindowToUpdate()">
+            PUT
+        </button>
+        <button id="delMethod" type="button" onclick="openWindowToDel()">
+            DELETE
+        </button>
+
+    </div>
+    <div id="popupbox"> 
+        <form method="post">
+            <h1>Please enter new values to save in db</h1>
+            <div style= "display: flex; justify-content: space-between; max-width: 30%; margin-left:20%; padding: 10px 0;">
+                <h3 style="margin-left: -50px;">latitude:</h3>
+                <input id="latForPost" size="14" />
+                <h3 style="margin-left: 30px;">longitude:</h3>
+                <input id="lonForPost" size="14" />
+            </div>  
+            <div style= "display: flex; justify-content: space-between; max-width: 30%; margin-left:20%; padding: 10px 0;">
+                <h3 style="margin-left: -50px;">altitude:</h3>
+                <input id='altForPost' size="14" />
+                <h3 style="margin-left: 30px;">name:</h3>
+                <input id="nameForPost" style="margin-left: 30px;" size="14" />
+            </div> 
+            <div style="margin-left:70px; margin-top: 20px;">   
+                <button style="width : 200px;" type="button" onclick="closeWindow()">CANCEL</button>      
+                <button style="width : 200px;" type="button" onclick="sendDataToApi()">SEND</button>
+            </div>
+        </form>
+    </div> 
+
+    <div id="popupBounding"> 
+        <form method="post">
+            <h1>Bounding box values</h1>
+            <div style= "display: flex; justify-content: space-between; max-width: 30%; margin-left:20%; padding: 10px 0;">
+                <h3 style="margin-left: -50px;">minimum latitude:</h3>
+                <input id="min_lat" style="margin-top: 27px;" size="14" />
+                <h3 style="margin-left: 30px;">minimum longitude:</h3>
+                <input id="min_lon" style="margin-top: 27px;" size="14" />
+            </div>  
+            <div style= "display: flex; justify-content: space-between; max-width: 30%; margin-left:20%; padding: 10px 0;">
+                <h3 style="margin-left: -50px;">maximum latitude:</h3>
+                <input id="max_lat" style="margin-top: 27px;" size="14" />
+                <h3 style="margin-left: 30px;">maximum longitude:</h3>
+                <input id="max_lon" style="margin-top: 27px;" size="14" />
+            </div> 
+            <div style="margin-left:70px; margin-top: 20px;">   
+                <button style="width : 200px;" type="button" onclick="closeWindowBounding()">CANCEL</button>      
+                <button style="width : 200px;" type="button" onclick="sendDataToApi()">SEND</button>
+            </div>
+        </form>
+    </div> 
+
+    <div id="popupUpdate"> 
+        <form method="post">
+            <div  style = "display: flex; text-align: center; margin-left: 28px; margin-top: 20px;">
+                <h3>Please enter the id to update:</h3>
+                <input id='identForUpdate' size="14" />                
+            </div>
+            <div style = "border-bottom: solid; border-bottom-color: blue; margin-top: 15px;">
+
+            </div>
+            <div style= "display: flex; justify-content: space-between; max-width: 30%; margin-left:20%; padding: 10px 0;">
+                <h3 style="margin-left: -50px;">latitude:</h3>
+                <input id="latForUpdate" size="14" />
+                <h3 style="margin-left: 30px;">longitude:</h3>
+                <input id="lonForUpdate" size="14" />
+            </div>  
+            <div style= "display: flex; justify-content: space-between; max-width: 30%; margin-left:20%; padding: 10px 0; ">
+                <h3 style="margin-left: -50px;">altitude:</h3>
+                <input id='altForUpdate' size="14" />
+                <h3 style="margin-left: 30px;">name:</h3>
+                <input id="nameForUpdate" style="margin-left: 30px;" size="14" />
+            </div> 
+            <div style="margin-left:70px; margin-top: 20px;">   
+                <button style="width : 200px; margin-left:70px;" type="button" onclick="closeWindowUpdate()">CANCEL</button>      
+                <button style="width : 200px; margin-right: 20px;" type="button" onclick="sendDataToApi()">SEND</button>
+            </div>
+        </form>
+    </div> 
+    <div id="popupDel"> 
+        <form method="post">
+            <div  style = "display: flex; text-align: center; margin-left: 28px; margin-top: 20px;">
+                <h3>Please enter the id to delete:</h3>
+                <input id='identForDel' size="14" />                
+            </div> 
+            <div style="display: flex; Justify-content: space-between; margin-left:70px; margin-top: 20px;">   
+                <button style="width : 200px;" type="button" onclick="closeWindowDel()">CANCEL</button>      
+                <button style="width : 200px; margin-right: 20px;" type="button" onclick="sendDataToApi()">SEND</button>
+            </div>
+        </form>
+    </div> 
+    <script src="/static/index.js"></script>
+  </body>
+  <!-- <script>
+      window.addEventListener('load', function() {
+
+      });
+  </script>
+  <script async src="./javascript/index.js"></script> -->
+</html>
+

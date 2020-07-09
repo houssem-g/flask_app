@@ -6,7 +6,11 @@
   <usages>
     <entry>
       <string>flask_app/master</string>
+<<<<<<< HEAD
       <ranges>2-13</ranges>
+=======
+      <ranges>2-12</ranges>
+>>>>>>> 18d95a86028a7076cb5e91d810263cd74bf3ce57
     </entry>
     <entry>
       <string>flask_app/jenkins</string>

@@ -34,7 +34,11 @@
               <id>github</id>
               <description>GitHub Access Token</description>
               <username>houssem</username>
+<<<<<<< HEAD
               <password>{AQAAABAAAAAwkMx8EYRbkPYxVAwpaBA4CAhkpMrOhz4rEm8ae5B3zc/RR2+m2YR1XVKYPqWPvxx5evt8UGJa2XcnjZSUk9PRNg==}</password>
+=======
+              <password>{AQAAABAAAAAwtutnUnePbhOgXmsPNvTDLDxoydEpE+9N8eTM4/HOWjavMcJ7cwzgGK3lO3j/kP2iYeEqGGxZXcmFTV0sUTsUgQ==}</password>
+>>>>>>> 18d95a86028a7076cb5e91d810263cd74bf3ce57
             </com.cloudbees.plugins.credentials.impl.UsernamePasswordCredentialsImpl>
           </list>
         </entry>

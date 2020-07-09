@@ -15,14 +15,13 @@
         <head class="org.jenkinsci.plugins.github_branch_source.BranchSCMHead" plugin="github-branch-source@2.8.2">
           <name>master</name>
         </head>
-        <hash>64dd4f184ba597fd22d1b9a424d493578ee34dec</hash>
+        <hash>13c8cae5f66469ea18f0505a1fe1825dff944ba5</hash>
       </revision>
     </jenkins.scm.api.SCMRevisionAction>
     <org.jenkinsci.plugins.workflow.libs.LibrariesAction plugin="workflow-cps-global-lib@2.16">
       <libraries/>
     </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
     <org.jenkinsci.plugins.pipeline.modeldefinition.actions.ExecutionModelAction plugin="pipeline-model-definition@1.7.0">
-      <stagesUUID>a755d911-d1d5-40b4-8e49-4c7abcbdce20</stagesUUID>
       <pipelineDefs>
         <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTPipelineDef plugin="pipeline-model-api@1.7.0">
           <stages>
@@ -53,6 +52,31 @@
                 </branches>
               </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
               <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                <agent>
+                  <variables class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTClosureMap">
+                    <variables class="linked-hash-map">
+                      <entry>
+                        <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                          <key>image</key>
+                        </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                        <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                          <value class="string">maven:3-alpine</value>
+                        </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                      </entry>
+                      <entry>
+                        <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                          <key>args</key>
+                        </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                        <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                          <value class="string">-v /root/.m2/repository:/root/.m2/repository</value>
+                        </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                      </entry>
+                    </variables>
+                  </variables>
+                  <agentType>
+                    <key>docker</key>
+                  </agentType>
+                </agent>
                 <name>build</name>
                 <branches>
                   <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
@@ -67,32 +91,7 @@
                                 <key>script</key>
                               </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
                               <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
-                                <value class="string">mvn -B -DskipTests clean package</value>
-                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
-                            </entry>
-                          </arguments>
-                        </args>
-                      </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
-                    </steps>
-                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
-                </branches>
-              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
-              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
-                <name>Test</name>
-                <branches>
-                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
-                    <name>default</name>
-                    <steps>
-                      <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
-                        <name>sh</name>
-                        <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
-                          <arguments class="linked-hash-map">
-                            <entry>
-                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
-                                <key>script</key>
-                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
-                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
-                                <value class="string">mvn test</value>
+                                <value class="string">mvn clean compile</value>
                               </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
                             </entry>
                           </arguments>
@@ -103,7 +102,7 @@
                 </branches>
               </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
             </stages>
-            <uuid>a755d911-d1d5-40b4-8e49-4c7abcbdce20</uuid>
+            <uuid>81eb332c-ab9f-4af2-ad28-3ad11ce47eae</uuid>
           </stages>
           <environment>
             <variables class="linked-hash-map">
@@ -118,96 +117,32 @@
             </variables>
           </environment>
           <agent>
-            <variables class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTClosureMap">
-              <variables class="linked-hash-map">
-                <entry>
-                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
-                    <key>image</key>
-                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
-                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
-                    <value class="string">maven:3-alpine</value>
-                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
-                </entry>
-                <entry>
-                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
-                    <key>args</key>
-                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
-                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
-                    <value class="string">-v /root/.m2:/root/.m2</value>
-                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
-                </entry>
-              </variables>
-            </variables>
             <agentType>
-              <key>docker</key>
+              <key>any</key>
             </agentType>
           </agent>
         </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTPipelineDef>
       </pipelineDefs>
     </org.jenkinsci.plugins.pipeline.modeldefinition.actions.ExecutionModelAction>
-    <hudson.plugins.git.util.BuildData plugin="git@4.3.0">
-      <buildsByBranchName>
-        <entry>
-          <string>master</string>
-          <hudson.plugins.git.util.Build>
-            <marked plugin="git-client@3.2.1">
-              <sha1>64dd4f184ba597fd22d1b9a424d493578ee34dec</sha1>
-              <branches class="singleton-set">
-                <hudson.plugins.git.Branch>
-                  <sha1 reference="../../../sha1"/>
-                  <name>master</name>
-                </hudson.plugins.git.Branch>
-              </branches>
-            </marked>
-            <revision reference="../marked"/>
-            <hudsonBuildNumber>1</hudsonBuildNumber>
-          </hudson.plugins.git.util.Build>
-        </entry>
-      </buildsByBranchName>
-      <lastBuild reference="../buildsByBranchName/entry/hudson.plugins.git.util.Build"/>
-      <remoteUrls>
-        <string>https://github.com/houssem-g/flask_app.git</string>
-      </remoteUrls>
-    </hudson.plugins.git.util.BuildData>
-    <hudson.plugins.git.GitTagAction plugin="git@4.3.0">
-      <tags class="hudson.util.CopyOnWriteMap$Tree">
-        <entry>
-          <string>master</string>
-          <list/>
-        </entry>
-      </tags>
-      <ws>/var/jenkins_home/workspace/flask_app_master</ws>
-    </hudson.plugins.git.GitTagAction>
-    <org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState plugin="workflow-scm-step@2.11">
-      <revisionStates>
-        <entry>
-          <string>git https://github.com/houssem-g/flask_app.git</string>
-          <hudson.scm.SCMRevisionState_-None/>
-        </entry>
-      </revisionStates>
-    </org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState>
-    <com.cloudbees.jenkins.plugins.bitbucket.FirstCheckoutCompletedInvisibleAction plugin="cloudbees-bitbucket-branch-source@2.8.0"/>
-    <org.jenkinsci.plugins.workflow.cps.EnvActionImpl plugin="workflow-cps@2.80">
-      <env class="tree-map"/>
-    </org.jenkinsci.plugins.workflow.cps.EnvActionImpl>
+    <jenkins.model.InterruptedBuildAction>
+      <causes class="com.google.common.collect.ImmutableList">
+        <jenkins.model.CauseOfInterruption_-UserInterruption>
+          <user>houssem</user>
+        </jenkins.model.CauseOfInterruption_-UserInterruption>
+      </causes>
+    </jenkins.model.InterruptedBuildAction>
   </actions>
-  <queueId>2</queueId>
-  <timestamp>1592745571095</timestamp>
-  <startTime>1592745571247</startTime>
-  <result>FAILURE</result>
-  <duration>90567</duration>
+  <queueId>47</queueId>
+  <timestamp>1594294041319</timestamp>
+  <startTime>1594294041419</startTime>
+  <result>ABORTED</result>
+  <duration>25729</duration>
   <charset>UTF-8</charset>
   <keepLog>false</keepLog>
   <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
-    <result>FAILURE</result>
+    <result>ABORTED</result>
     <script>pipeline {
-  agent {
-    docker {
-      image &apos;maven:3-alpine&apos;
-      args &apos;-v /root/.m2:/root/.m2&apos;
-    }
-
-  }
+  agent any
   stages {
     stage(&apos;SCM&apos;) {
       steps {
@@ -216,14 +151,15 @@
     }
 
     stage(&apos;build&apos;) {
-      steps {
-        sh &apos;mvn -B -DskipTests clean package&apos;
-      }
-    }
+      agent {
+        docker {
+          image &apos;maven:3-alpine&apos;
+          args &apos;-v /root/.m2/repository:/root/.m2/repository&apos;
+        }
 
-    stage(&apos;Test&apos;) {
+      }
       steps {
-        sh &apos;mvn test&apos;
+        sh &apos;mvn clean compile&apos;
       }
     }
 
@@ -237,78 +173,31 @@
     <timings class="map">
       <entry>
         <string>flowNode</string>
-        <long>5317073760</long>
+        <long>289950105</long>
       </entry>
       <entry>
         <string>classLoad</string>
-        <long>46643162452</long>
+        <long>21397326322</long>
       </entry>
       <entry>
         <string>run</string>
-        <long>48376026691</long>
+        <long>11685321571</long>
       </entry>
       <entry>
         <string>parse</string>
-        <long>8287765909</long>
+        <long>6562174100</long>
       </entry>
       <entry>
         <string>saveProgram</string>
-        <long>5116046198</long>
+        <long>540581109</long>
       </entry>
     </timings>
     <sandbox>true</sandbox>
-    <iota>20</iota>
-    <head>1:20</head>
+    <iota>3</iota>
+    <head>1:3</head>
     <done>true</done>
     <resumeBlocked>false</resumeBlocked>
   </execution>
   <completed>true</completed>
-  <checkouts class="hudson.util.PersistedList">
-    <org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout>
-      <scm class="hudson.plugins.git.GitSCM" plugin="git@4.3.0">
-        <configVersion>2</configVersion>
-        <userRemoteConfigs>
-          <hudson.plugins.git.UserRemoteConfig>
-            <name>origin</name>
-            <refspec>+refs/heads/master:refs/remotes/origin/master</refspec>
-            <url>https://github.com/houssem-g/flask_app.git</url>
-            <credentialsId>github</credentialsId>
-          </hudson.plugins.git.UserRemoteConfig>
-        </userRemoteConfigs>
-        <branches class="singleton-list">
-          <hudson.plugins.git.BranchSpec>
-            <name>master</name>
-          </hudson.plugins.git.BranchSpec>
-        </branches>
-        <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
-        <browser class="hudson.plugins.git.browser.GithubWeb">
-          <url>https://github.com/houssem-g/flask_app</url>
-        </browser>
-        <submoduleCfg class="empty-list"/>
-        <extensions>
-          <hudson.plugins.git.extensions.impl.CleanBeforeCheckout>
-            <deleteUntrackedNestedRepositories>false</deleteUntrackedNestedRepositories>
-          </hudson.plugins.git.extensions.impl.CleanBeforeCheckout>
-          <hudson.plugins.git.extensions.impl.CleanCheckout>
-            <deleteUntrackedNestedRepositories>false</deleteUntrackedNestedRepositories>
-          </hudson.plugins.git.extensions.impl.CleanCheckout>
-          <hudson.plugins.git.extensions.impl.LocalBranch>
-            <localBranch>**</localBranch>
-          </hudson.plugins.git.extensions.impl.LocalBranch>
-          <jenkins.plugins.git.GitSCMSourceDefaults>
-            <includeTags>false</includeTags>
-          </jenkins.plugins.git.GitSCMSourceDefaults>
-          <hudson.plugins.git.extensions.impl.BuildChooserSetting>
-            <buildChooser class="jenkins.plugins.git.AbstractGitSCMSource$SpecificRevisionBuildChooser">
-              <revision reference="../../../../../../../actions/hudson.plugins.git.util.BuildData/buildsByBranchName/entry/hudson.plugins.git.util.Build/marked"/>
-            </buildChooser>
-          </hudson.plugins.git.extensions.impl.BuildChooserSetting>
-        </extensions>
-      </scm>
-      <node></node>
-      <workspace>/var/jenkins_home/workspace/flask_app_master</workspace>
-      <changelogFile>/var/jenkins_home/jobs/flask_app/branches/master/builds/1/changelog1866170371023652267.xml</changelogFile>
-      <pollingBaseline class="hudson.scm.SCMRevisionState$None" reference="../../../actions/org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState/revisionStates/entry/hudson.scm.SCMRevisionState_-None"/>
-    </org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout>
-  </checkouts>
+  <checkouts class="hudson.util.PersistedList"/>
 </flow-build>
