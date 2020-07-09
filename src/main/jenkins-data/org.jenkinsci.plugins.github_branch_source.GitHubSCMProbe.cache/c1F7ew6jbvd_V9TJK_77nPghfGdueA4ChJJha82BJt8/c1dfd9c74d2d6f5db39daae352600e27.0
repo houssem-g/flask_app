@@ -1,22 +1,22 @@
-https://api.github.com/repos/houssem-g/flask_app
+https://api.github.com/repos/houssem-g/flask_app/contents/Jenkinsfile?ref=ed4fbbe94bfcc23c243176af954e89fedfab9b21
 GET
 2
 Authorization: Basic aG91c3NlbS1nOkthYWJvdXJhOTIv
 Accept-Encoding: gzip
 HTTP/1.1 200 OK
 27
-Date: Thu, 09 Jul 2020 20:02:37 GMT
+Date: Thu, 09 Jul 2020 20:02:36 GMT
 Content-Type: application/json; charset=utf-8
 Transfer-Encoding: chunked
 Server: GitHub.com
 Status: 200 OK
 X-RateLimit-Limit: 5000
-X-RateLimit-Remaining: 4995
-X-RateLimit-Reset: 1594328556
+X-RateLimit-Remaining: 4996
+X-RateLimit-Reset: 1594328555
 Cache-Control: private, max-age=60, s-maxage=60
 Vary: Accept, Authorization, Cookie, X-GitHub-OTP
-ETag: W/"5fc89fac5ce2bab14cc0bd4d1e988df8"
-Last-Modified: Thu, 09 Jul 2020 20:02:01 GMT
+ETag: W/"0c04ac80e34e31cf9e3c9be7d042d97d4aafaea4"
+Last-Modified: Thu, 09 Jul 2020 20:01:45 GMT
 X-GitHub-Media-Type: github.v3; format=json
 Access-Control-Expose-Headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset
 Access-Control-Allow-Origin: *
@@ -29,9 +29,9 @@ Content-Security-Policy: default-src 'none'
 Vary: Accept-Encoding, Accept, X-Requested-With
 Content-Encoding: gzip
 Vary: Accept-Encoding
-X-GitHub-Request-Id: D2F3:FF21:FD822C:1362D1F:5F0777DC
-OkHttp-Sent-Millis: 1594324954606
-OkHttp-Received-Millis: 1594324954984
+X-GitHub-Request-Id: D2F3:FF21:FD8165:1362C81:5F0777DC
+OkHttp-Sent-Millis: 1594324954106
+OkHttp-Received-Millis: 1594324954340
 
 TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
 2

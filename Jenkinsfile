@@ -42,6 +42,7 @@ pipeline {
     always { 
         cleanWs()
     }
+  }
   environment {
     scm = 'master'
   }

@@ -4,14 +4,14 @@ GET
 Accept-Encoding: gzip
 HTTP/1.1 200 OK
 24
-Date: Thu, 09 Jul 2020 20:00:45 GMT
+Date: Thu, 09 Jul 2020 20:02:35 GMT
 Content-Type: application/json; charset=utf-8
 Transfer-Encoding: chunked
 Server: GitHub.com
 Status: 200 OK
 X-RateLimit-Limit: 5000
-X-RateLimit-Remaining: 4975
-X-RateLimit-Reset: 1594324905
+X-RateLimit-Remaining: 5000
+X-RateLimit-Reset: 1594328555
 Cache-Control: no-cache
 X-GitHub-Media-Type: github.v3; format=json
 Access-Control-Expose-Headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset
@@ -25,9 +25,9 @@ Content-Security-Policy: default-src 'none'
 Vary: Accept-Encoding, Accept, X-Requested-With
 Content-Encoding: gzip
 Vary: Accept-Encoding
-X-GitHub-Request-Id: D2D9:50F8:338DDD:3E1D6E:5F07776D
-OkHttp-Sent-Millis: 1594324843234
-OkHttp-Received-Millis: 1594324843415
+X-GitHub-Request-Id: D2F3:FF21:FD7EDF:136297F:5F0777DA
+OkHttp-Sent-Millis: 1594324952614
+OkHttp-Received-Millis: 1594324952840
 
 TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
 2
