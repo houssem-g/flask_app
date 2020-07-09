@@ -1,0 +1,51 @@
+body {
+    text-align: center;
+    background-color: #f0e8c5;
+  }   
+input {
+    height: 30px;
+    margin-top: 15px;
+} 
+table, th, td {
+    border: 1px solid black;
+    }
+button {
+    width: 200px;
+    height: 50px
+}
+
+#popupbox {
+    height: 350px;
+    width: 600px;
+    background-color: white;
+    position: absolute;
+    top: -3000px;
+    left: 30%;
+
+}
+#popupBounding {
+    height: 370px;
+    width: 600px;
+    background-color: white;
+    position: absolute;
+    top: -3000px;
+    left: 30%;
+}
+#popupUpdate {
+    height: 350px;
+    width: 600px;
+    background-color: white;
+    position: absolute;
+    top: -3000px;
+    left: 30%;
+
+}
+
+#popupDel {
+    height: 170px;
+    width: 520px;
+    background-color: white;
+    position: absolute;
+    top: -3000px;
+    left: 30%;
+}

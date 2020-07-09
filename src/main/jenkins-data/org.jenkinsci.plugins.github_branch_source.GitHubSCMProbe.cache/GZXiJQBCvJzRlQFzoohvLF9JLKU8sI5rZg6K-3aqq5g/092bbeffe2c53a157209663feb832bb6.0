@@ -5,21 +5,20 @@ Authorization: Basic aG91c3NlbTo0MTkwMjYxN2FmNWY1YmI0MjE5OGUwY2VhOWNmNDYyYzBlOTV
 Accept-Encoding: gzip
 HTTP/1.1 200 OK
 28
+Date: Thu, 09 Jul 2020 12:50:10 GMT
 Content-Type: application/json; charset=utf-8
 Transfer-Encoding: chunked
+Server: GitHub.com
+Status: 200 OK
+X-RateLimit-Limit: 5000
+X-RateLimit-Remaining: 4978
+X-RateLimit-Reset: 1594301331
+Cache-Control: private, max-age=60, s-maxage=60
+Vary: Accept, Authorization, Cookie, X-GitHub-OTP
+ETag: W/"2ad88fcd3aacfe3d170f5d54e65ceeba"
 X-OAuth-Scopes: admin:enterprise, admin:gpg_key, admin:org, admin:org_hook, admin:public_key, admin:repo_hook, delete:packages, gist, notifications, read:packages, repo, user, workflow, write:discussion, write:packages
 X-Accepted-OAuth-Scopes: 
 X-GitHub-Media-Type: github.v3; format=json
-Content-Encoding: gzip
-Date: Thu, 09 Jul 2020 11:27:22 GMT
-Server: GitHub.com
-Status: 304 Not Modified
-X-RateLimit-Limit: 5000
-X-RateLimit-Remaining: 4987
-X-RateLimit-Reset: 1594297620
-Cache-Control: private, max-age=60, s-maxage=60
-Vary: Accept, Authorization, Cookie, X-GitHub-OTP
-ETag: "f426377e02d925f4b14c9a133e19dbc2"
 Access-Control-Expose-Headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset
 Access-Control-Allow-Origin: *
 Strict-Transport-Security: max-age=31536000; includeSubdomains; preload
@@ -29,10 +28,11 @@ X-XSS-Protection: 1; mode=block
 Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin
 Content-Security-Policy: default-src 'none'
 Vary: Accept-Encoding, Accept, X-Requested-With
+Content-Encoding: gzip
 Vary: Accept-Encoding
-X-GitHub-Request-Id: D205:50F5:E0C1:108F2:5F06FF19
-OkHttp-Sent-Millis: 1594294040275
-OkHttp-Received-Millis: 1594294040451
+X-GitHub-Request-Id: D67E:7D36:6191F8:760E6C:5F071281
+OkHttp-Sent-Millis: 1594299008347
+OkHttp-Received-Millis: 1594299008546
 
 TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
 2

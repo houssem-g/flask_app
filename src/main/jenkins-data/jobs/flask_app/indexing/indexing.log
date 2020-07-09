@@ -1,6 +1,6 @@
 Started by user [8mha:////4Muh8/xVa80+O5fCIX+KlANI/QGzsELQnTNc6o51Ge55AAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZe/dLi1CL9jPzS4uLUXABkn/HfwgAAAA==[0mhoussem
-[Thu Jul 09 11:27:18 GMT 2020] Starting branch indexing...
-[8mha:////4EmKqkhX1cgo9drGZUTDdJXwnth9TKWPqOpdzeyQkb6DAAAAhB+LCAAAAAAAAP9b85aBtbiIwSa/KF0vKzUvOzOvODlTryCnNB3I0kvPLMkoTYpPKkrMS86IL84vLUpO1XPPLPEoTXLOzyvOz0n1yy9JZYAARiYGRi8GzpLM3NTiksTcgooiBqmM0pTi/Dy9ZIhiPayaGCoKgHSxcUiRMAAZMsWPjgAAAA==[0mConnecting to https://api.github.com using houssem/****** (GitHub Access Token)
+[Thu Jul 09 12:50:06 GMT 2020] Starting branch indexing...
+[8mha:////4FHRIBKir5anwwbbWSBaoGBdBKSzEyNtc5JdPiZlztanAAAAhB+LCAAAAAAAAP9b85aBtbiIwSa/KF0vKzUvOzOvODlTryCnNB3I0kvPLMkoTYpPKkrMS86IL84vLUpO1XPPLPEoTXLOzyvOz0n1yy9JZYAARiYGRi8GzpLM3NTiksTcgooiBqmM0pTi/Dy9ZIhiPayaGCoKgHSx8QIHSQB6VK0wjgAAAA==[0mConnecting to https://api.github.com using houssem/****** (GitHub Access Token)
 Examining [8mha:////4K2owpmMvb7xpRab6tm4f1VCGcezYdG+h7IhTGV6G1PQAAAAph+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMgQLmFQyygpKSi20tdPzyzJKE0C6srVz8gvLS5OzdVN10/LSSzOjk8sKAAAmORLwKsAAAA=[0mhoussem-g/flask_app
 
   Checking branches...
@@ -10,12 +10,13 @@ Examining [8mha:////4K2owpmMvb7xpRab6tm4f1VCGcezYdG+h7IhTGV6G1PQAAAAph+LCAAAAAA
     Checking branch [8mha:////4B1xPyiMj9OL6nWWxmxPwzuqFfayxmfsJ8kbmIeP2O0PAAAAsB+LCAAAAAAAAP9djLENwjAQRY8gMgAlYgVyEgUFKBUNSBENAyADhx3i2JbvgsIarAENQzAOOxBEx2v+a/57vGHAEcamObJ32cE79pay1TVQtKWrNl5olt+f+S28EkjWkFpyWkwB/SZagWFxVheFVjmNW4ml04s2wugvt/ztNwY/eglAGzpJBaZGJPAcUZdimn33qtH4hpnqicaTVVztVAgokQhrxULxA+Vb0DO3AAAA[0mmaster
       ‘Jenkinsfile’ found
     Met criteria
+Changes detected: master (3d44057b36f6198c2d4a80e28e56f48a4a2f85e2 → 9d09e3dfc8f4178e7c2d68ca24219181f15e40fe)
 Scheduled build for branch: master
 
     Checking branch [8mha:////4CjDNOtFVmgeEOca43jxUtVMrLCF6/KFXPOjUsbY6VhKAAAAsR+LCAAAAAAAAP9djLENwjAQRY8goKdErECuQKIApaIBKaJhAGTgsJM4tmWfUViDNaBhCMZhB4LS8Zr/mv+eHxgED1MVz8Ga9GRNsJrSzc2R14WpdpZpkT1e2d29E0i2MNRkJKsc+tFrhnFeiqtALYzEPfvCyFXjYfKXW3f7i0FHLwFoXCsjhrlidmGJKAtW8di+alQ2hkD1TOJFi1AdhHPInghLMlVhwhfhisOhuAAAAA==[0mjenkins
       ‘Jenkinsfile’ found
     Met criteria
-Scheduled build for branch: jenkins
+No changes detected: jenkins (still at b0ba79686243ee4309788f9671beddf753c064ca)
 
   2 branches were processed
 
@@ -27,5 +28,5 @@ Scheduled build for branch: jenkins
 
 Finished examining houssem-g/flask_app
 
-[Thu Jul 09 11:27:25 GMT 2020] Finished branch indexing. Indexing took 6.3 sec
+[Thu Jul 09 12:50:11 GMT 2020] Finished branch indexing. Indexing took 4.9 sec
 Finished: SUCCESS

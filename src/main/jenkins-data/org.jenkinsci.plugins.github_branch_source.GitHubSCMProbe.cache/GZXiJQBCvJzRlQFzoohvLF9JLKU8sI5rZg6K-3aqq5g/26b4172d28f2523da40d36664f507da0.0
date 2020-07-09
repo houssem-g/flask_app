@@ -4,14 +4,14 @@ GET
 Accept-Encoding: gzip
 HTTP/1.1 200 OK
 26
-Date: Thu, 09 Jul 2020 11:31:00 GMT
+Date: Thu, 09 Jul 2020 12:51:50 GMT
 Content-Type: application/json; charset=utf-8
 Transfer-Encoding: chunked
 Server: GitHub.com
 Status: 200 OK
 X-RateLimit-Limit: 5000
-X-RateLimit-Remaining: 4965
-X-RateLimit-Reset: 1594297621
+X-RateLimit-Remaining: 4966
+X-RateLimit-Reset: 1594301331
 Cache-Control: no-cache
 X-OAuth-Scopes: admin:enterprise, admin:gpg_key, admin:org, admin:org_hook, admin:public_key, admin:repo_hook, delete:packages, gist, notifications, read:packages, repo, user, workflow, write:discussion, write:packages
 X-Accepted-OAuth-Scopes: 
@@ -27,9 +27,9 @@ Content-Security-Policy: default-src 'none'
 Vary: Accept-Encoding, Accept, X-Requested-With
 Content-Encoding: gzip
 Vary: Accept-Encoding
-X-GitHub-Request-Id: D229:2B8A:21985E:28BA38:5F06FFF3
-OkHttp-Sent-Millis: 1594294258376
-OkHttp-Received-Millis: 1594294258530
+X-GitHub-Request-Id: D67E:7D36:62AABB:7761B4:5F0712E6
+OkHttp-Sent-Millis: 1594299108435
+OkHttp-Received-Millis: 1594299108584
 
 TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
 2

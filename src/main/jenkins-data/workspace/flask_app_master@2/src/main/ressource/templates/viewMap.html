@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="static/styles.css" />
+
+<title>Using the Google Maps</title>
+<script src="https://maps.google.com/maps/api/js?sensor=false"></script>
+
+</head>
+<body>
+    <div id="positionToFind">
+
+        <form method="post">
+            <div style= "display: flex; justify-content: space-between; max-width: 30%; margin-left:35%; padding: 10px 0;">
+                <h3 style="margin-left: -50px;">latitude:</h3>
+                <input id="latForMap" size="14" />
+                <h3 style="margin-left: 30px;">longitude:</h3>
+                <input id="lonForMap" size="14" />
+            </div>  
+ 
+            <!-- <div style="margin-left:70px; margin-top: 20px;">   
+                <button style="width : 200px;" type="button" onclick="sendDataToApi()">SEND</button>
+            </div> -->
+        </form>
+        </div> 
+    <button type="button" onclick="showPosition();">Show the Position on Google Map</button>
+
+    <div id="embedMap" style="margin-top:10%; width: 100%; height: 500px;"></div>
+
+
+    <script>
+        function showPosition() {
+            if(navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showMap);
+            } else {
+                alert("Sorry, your browser does not support HTML5 geolocation.");
+            }
+        }
+         
+        // Define callback function for successful attempt
+        function showMap(position) {
+            // Get location data
+            lat = document.getElementById("latForMap").value || 40.6892;
+            long = document.getElementById("lonForMap").value || -74.0445   ;
+            var latlong = new google.maps.LatLng(lat, long);
+            
+            var myOptions = {
+                center: latlong,
+                zoom: 16,
+                mapTypeControl: true,
+                navigationControlOptions: {
+                    style:google.maps.NavigationControlStyle.SMALL
+                }
+            }
+            
+            var map = new google.maps.Map(document.getElementById("embedMap"), myOptions);
+            var marker = new google.maps.Marker({ position:latlong, map:map, title:"You are here!" });
+        }
+         
+        // Define callback function for failed attempt
+  
+    </script>
+</body>
+</html>

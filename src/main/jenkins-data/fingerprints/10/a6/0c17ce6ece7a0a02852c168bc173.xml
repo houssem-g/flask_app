@@ -6,11 +6,11 @@
   <usages>
     <entry>
       <string>flask_app/master</string>
-      <ranges>2</ranges>
+      <ranges>2-10</ranges>
     </entry>
     <entry>
       <string>flask_app/jenkins</string>
-      <ranges>2-3</ranges>
+      <ranges>2-4</ranges>
     </entry>
   </usages>
   <facets/>
