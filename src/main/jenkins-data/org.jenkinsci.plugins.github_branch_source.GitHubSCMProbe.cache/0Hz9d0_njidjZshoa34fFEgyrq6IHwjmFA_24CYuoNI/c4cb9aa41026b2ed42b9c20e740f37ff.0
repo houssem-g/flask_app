@@ -1,27 +1,26 @@
-https://api.github.com/repos/houssem-g/flask_app/git/refs/heads/master
+https://api.github.com/repos/houssem-g/flask_app/contents/Jenkinsfile?ref=0ff2447f7dc5c721c3327ef5eddbe9e9506b5f64
 GET
 2
 Authorization: Basic aG91c3NlbTozYjRlZjY5YjgxZTk2N2IzZmJiOGM4MWRjNTUwZWNiOTBmYjkzOTgw
 Accept-Encoding: gzip
 HTTP/1.1 200 OK
-30
+29
 Content-Type: application/json; charset=utf-8
 Transfer-Encoding: chunked
-X-Poll-Interval: 300
 X-OAuth-Scopes: admin:enterprise, admin:gpg_key, admin:org, admin:org_hook, admin:public_key, admin:repo_hook, delete:packages, gist, notifications, read:packages, repo, user, workflow, write:discussion, write:packages
-X-Accepted-OAuth-Scopes: repo
+X-Accepted-OAuth-Scopes: 
 X-GitHub-Media-Type: github.v3; format=json
 Content-Encoding: gzip
-Date: Thu, 09 Jul 2020 19:04:11 GMT
+Date: Thu, 09 Jul 2020 19:04:12 GMT
 Server: GitHub.com
 Status: 304 Not Modified
 X-RateLimit-Limit: 5000
-X-RateLimit-Remaining: 4997
+X-RateLimit-Remaining: 4996
 X-RateLimit-Reset: 1594324905
 Cache-Control: private, max-age=60, s-maxage=60
 Vary: Accept, Authorization, Cookie, X-GitHub-OTP
-ETag: "018e928092f04cb5dec96818556081d0"
-Last-Modified: Thu, 09 Jul 2020 18:56:19 GMT
+ETag: "0c04ac80e34e31cf9e3c9be7d042d97d4aafaea4"
+Last-Modified: Thu, 09 Jul 2020 18:55:51 GMT
 Access-Control-Expose-Headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset
 Access-Control-Allow-Origin: *
 Strict-Transport-Security: max-age=31536000; includeSubdomains; preload
@@ -32,9 +31,9 @@ Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin
 Content-Security-Policy: default-src 'none'
 Vary: Accept-Encoding, Accept, X-Requested-With
 Vary: Accept-Encoding
-X-GitHub-Request-Id: CF94:FF22:13A3E9E:17F6115:5F076A2B
-OkHttp-Sent-Millis: 1594321449502
-OkHttp-Received-Millis: 1594321449713
+X-GitHub-Request-Id: CF94:FF22:13A4063:17F62F7:5F076A2C
+OkHttp-Sent-Millis: 1594321450256
+OkHttp-Received-Millis: 1594321450457
 
 TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
 2
