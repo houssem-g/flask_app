@@ -6,7 +6,7 @@
   <usages>
     <entry>
       <string>flask_app/master</string>
-      <ranges>16-21</ranges>
+      <ranges>16-22</ranges>
     </entry>
   </usages>
   <facets/>

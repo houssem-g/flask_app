@@ -1,0 +1,104 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<Tag plugin="workflow-support@3.5">
+  <node class="cps.n.StepEndNode" plugin="workflow-cps@2.80">
+    <parentIds>
+      <string>10</string>
+    </parentIds>
+    <id>11</id>
+    <startId>3</startId>
+  </node>
+  <actions>
+    <wf.a.TimingAction plugin="workflow-api@2.40">
+      <startTime>1594319917391</startTime>
+    </wf.a.TimingAction>
+    <wf.a.ErrorAction plugin="workflow-api@2.40">
+      <error class="java.nio.file.DirectoryIteratorException">
+        <detailMessage>java.nio.file.FileSystemException: /var/jenkins_home/workspace/flask_app_master/src/main/jenkins-data/war/help/parameter: Invalid argument</detailMessage>
+        <cause class="java.nio.file.FileSystemException">
+          <detailMessage>Invalid argument</detailMessage>
+          <stackTrace>
+            <trace>sun.nio.fs.UnixException.translateToIOException(UnixException.java:91)</trace>
+            <trace>sun.nio.fs.UnixException.asIOException(UnixException.java:111)</trace>
+            <trace>sun.nio.fs.UnixDirectoryStream$UnixDirectoryIterator.readNextEntry(UnixDirectoryStream.java:171)</trace>
+            <trace>sun.nio.fs.UnixDirectoryStream$UnixDirectoryIterator.hasNext(UnixDirectoryStream.java:201)</trace>
+            <trace>jenkins.util.io.PathRemover.tryRemoveDirectoryContents(PathRemover.java:225)</trace>
+            <trace>jenkins.util.io.PathRemover.tryRemoveRecursive(PathRemover.java:215)</trace>
+            <trace>jenkins.util.io.PathRemover.tryRemoveDirectoryContents(PathRemover.java:226)</trace>
+            <trace>jenkins.util.io.PathRemover.tryRemoveRecursive(PathRemover.java:215)</trace>
+            <trace>jenkins.util.io.PathRemover.tryRemoveDirectoryContents(PathRemover.java:226)</trace>
+            <trace>jenkins.util.io.PathRemover.tryRemoveRecursive(PathRemover.java:215)</trace>
+            <trace>jenkins.util.io.PathRemover.tryRemoveDirectoryContents(PathRemover.java:226)</trace>
+            <trace>jenkins.util.io.PathRemover.tryRemoveRecursive(PathRemover.java:215)</trace>
+            <trace>jenkins.util.io.PathRemover.tryRemoveDirectoryContents(PathRemover.java:226)</trace>
+            <trace>jenkins.util.io.PathRemover.tryRemoveRecursive(PathRemover.java:215)</trace>
+            <trace>jenkins.util.io.PathRemover.tryRemoveDirectoryContents(PathRemover.java:226)</trace>
+            <trace>jenkins.util.io.PathRemover.tryRemoveRecursive(PathRemover.java:215)</trace>
+            <trace>jenkins.util.io.PathRemover.tryRemoveDirectoryContents(PathRemover.java:226)</trace>
+            <trace>jenkins.util.io.PathRemover.forceRemoveDirectoryContents(PathRemover.java:87)</trace>
+            <trace>hudson.Util.deleteContentsRecursive(Util.java:261)</trace>
+            <trace>hudson.FilePath$DeleteContents.invoke(FilePath.java:1286)</trace>
+            <trace>hudson.FilePath$DeleteContents.invoke(FilePath.java:1282)</trace>
+            <trace>hudson.FilePath.act(FilePath.java:1075)</trace>
+            <trace>hudson.FilePath.act(FilePath.java:1058)</trace>
+            <trace>hudson.FilePath.deleteContents(FilePath.java:1280)</trace>
+            <trace>hudson.plugins.git.extensions.impl.WipeWorkspace.beforeCheckout(WipeWorkspace.java:30)</trace>
+            <trace>hudson.plugins.git.GitSCM.checkout(GitSCM.java:1174)</trace>
+            <trace>org.jenkinsci.plugins.workflow.steps.scm.SCMStep.checkout(SCMStep.java:125)</trace>
+            <trace>org.jenkinsci.plugins.workflow.steps.scm.SCMStep$StepExecutionImpl.run(SCMStep.java:93)</trace>
+            <trace>org.jenkinsci.plugins.workflow.steps.scm.SCMStep$StepExecutionImpl.run(SCMStep.java:80)</trace>
+            <trace>org.jenkinsci.plugins.workflow.steps.SynchronousNonBlockingStepExecution.lambda$start$0(SynchronousNonBlockingStepExecution.java:47)</trace>
+            <trace>java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)</trace>
+            <trace>java.util.concurrent.FutureTask.run(FutureTask.java:266)</trace>
+            <trace>java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)</trace>
+            <trace>java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)</trace>
+            <trace>java.lang.Thread.run(Thread.java:748)</trace>
+          </stackTrace>
+          <suppressedExceptions class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
+            <c class="list"/>
+            <list reference="../c"/>
+          </suppressedExceptions>
+          <file>/var/jenkins_home/workspace/flask_app_master/src/main/jenkins-data/war/help/parameter</file>
+        </cause>
+        <stackTrace>
+          <trace>sun.nio.fs.UnixDirectoryStream$UnixDirectoryIterator.readNextEntry(UnixDirectoryStream.java:172)</trace>
+          <trace>sun.nio.fs.UnixDirectoryStream$UnixDirectoryIterator.hasNext(UnixDirectoryStream.java:201)</trace>
+          <trace>jenkins.util.io.PathRemover.tryRemoveDirectoryContents(PathRemover.java:225)</trace>
+          <trace>jenkins.util.io.PathRemover.tryRemoveRecursive(PathRemover.java:215)</trace>
+          <trace>jenkins.util.io.PathRemover.tryRemoveDirectoryContents(PathRemover.java:226)</trace>
+          <trace>jenkins.util.io.PathRemover.tryRemoveRecursive(PathRemover.java:215)</trace>
+          <trace>jenkins.util.io.PathRemover.tryRemoveDirectoryContents(PathRemover.java:226)</trace>
+          <trace>jenkins.util.io.PathRemover.tryRemoveRecursive(PathRemover.java:215)</trace>
+          <trace>jenkins.util.io.PathRemover.tryRemoveDirectoryContents(PathRemover.java:226)</trace>
+          <trace>jenkins.util.io.PathRemover.tryRemoveRecursive(PathRemover.java:215)</trace>
+          <trace>jenkins.util.io.PathRemover.tryRemoveDirectoryContents(PathRemover.java:226)</trace>
+          <trace>jenkins.util.io.PathRemover.tryRemoveRecursive(PathRemover.java:215)</trace>
+          <trace>jenkins.util.io.PathRemover.tryRemoveDirectoryContents(PathRemover.java:226)</trace>
+          <trace>jenkins.util.io.PathRemover.tryRemoveRecursive(PathRemover.java:215)</trace>
+          <trace>jenkins.util.io.PathRemover.tryRemoveDirectoryContents(PathRemover.java:226)</trace>
+          <trace>jenkins.util.io.PathRemover.forceRemoveDirectoryContents(PathRemover.java:87)</trace>
+          <trace>hudson.Util.deleteContentsRecursive(Util.java:261)</trace>
+          <trace>hudson.FilePath$DeleteContents.invoke(FilePath.java:1286)</trace>
+          <trace>hudson.FilePath$DeleteContents.invoke(FilePath.java:1282)</trace>
+          <trace>hudson.FilePath.act(FilePath.java:1075)</trace>
+          <trace>hudson.FilePath.act(FilePath.java:1058)</trace>
+          <trace>hudson.FilePath.deleteContents(FilePath.java:1280)</trace>
+          <trace>hudson.plugins.git.extensions.impl.WipeWorkspace.beforeCheckout(WipeWorkspace.java:30)</trace>
+          <trace>hudson.plugins.git.GitSCM.checkout(GitSCM.java:1174)</trace>
+          <trace>org.jenkinsci.plugins.workflow.steps.scm.SCMStep.checkout(SCMStep.java:125)</trace>
+          <trace>org.jenkinsci.plugins.workflow.steps.scm.SCMStep$StepExecutionImpl.run(SCMStep.java:93)</trace>
+          <trace>org.jenkinsci.plugins.workflow.steps.scm.SCMStep$StepExecutionImpl.run(SCMStep.java:80)</trace>
+          <trace>org.jenkinsci.plugins.workflow.steps.SynchronousNonBlockingStepExecution.lambda$start$0(SynchronousNonBlockingStepExecution.java:47)</trace>
+          <trace>java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)</trace>
+          <trace>java.util.concurrent.FutureTask.run(FutureTask.java:266)</trace>
+          <trace>java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)</trace>
+          <trace>java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)</trace>
+          <trace>java.lang.Thread.run(Thread.java:748)</trace>
+        </stackTrace>
+        <suppressedExceptions class="java.util.Collections$UnmodifiableRandomAccessList" reference="../cause/suppressedExceptions"/>
+      </error>
+    </wf.a.ErrorAction>
+    <wf.a.ErrorAction plugin="workflow-api@2.40">
+      <error class="java.nio.file.DirectoryIteratorException" reference="../../wf.a.ErrorAction/error"/>
+    </wf.a.ErrorAction>
+  </actions>
+</Tag>
