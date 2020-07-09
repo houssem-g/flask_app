@@ -13,7 +13,7 @@ pipeline {
           agent {
             docker {
               args '-v /root/.m2/repository:/root/.m2/repository'
-              image 'python:3.7.2'
+              image 'maven:3-alpine'
             }
 
           }
@@ -23,6 +23,13 @@ pipeline {
         }
 
         stage('test') {
+          agent {
+            docker {
+              image 'python:3.7.2'
+              args '-v /root/.m2/repository:/root/.m2/repository'
+            }
+
+          }
           steps {
             sh 'python test.py'
           }
