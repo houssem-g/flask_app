@@ -10,13 +10,16 @@ pipeline {
     stage('build') {
       agent {
         docker {
-          image 'maven:3-alpine'
+          image 'python:3.7.2'
           args '-v /root/.m2/repository:/root/.m2/repository'
         }
 
       }
       steps {
         sh 'mvn clean compile'
+      }
+      steps {
+        sh 'python test.py'
       }
     }
 

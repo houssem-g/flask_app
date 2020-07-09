@@ -17,3 +17,5 @@ if __name__ == '__main__':
 TEST_CASES
 chmod +x test.py
 
+#https://www.jenkins.io/blog/2017/09/25/declarative-1/
+#https://medium.com/@Joachim8675309/jenkins-ci-pipeline-with-python-8bf1a0234ec3

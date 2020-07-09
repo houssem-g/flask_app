@@ -9,8 +9,16 @@
       <ranges>1</ranges>
     </entry>
     <entry>
+      <string>python_pipeline/master</string>
+      <ranges>1</ranges>
+    </entry>
+    <entry>
       <string>flask_app/jenkins</string>
       <ranges>1-10</ranges>
+    </entry>
+    <entry>
+      <string>python_pipeline/jenkins</string>
+      <ranges>1-2</ranges>
     </entry>
   </usages>
   <facets/>
