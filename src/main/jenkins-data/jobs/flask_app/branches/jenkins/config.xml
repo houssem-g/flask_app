@@ -47,6 +47,7 @@
             <hudson.plugins.git.extensions.impl.LocalBranch>
               <localBranch>**</localBranch>
             </hudson.plugins.git.extensions.impl.LocalBranch>
+            <hudson.plugins.git.extensions.impl.WipeWorkspace/>
             <jenkins.plugins.git.GitSCMSourceDefaults>
               <includeTags>false</includeTags>
             </jenkins.plugins.git.GitSCMSourceDefaults>
