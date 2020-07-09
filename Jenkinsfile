@@ -7,7 +7,7 @@ pipeline {
       }
     }
 
-    stage('build') {
+    stage('run') {
       parallel {
         stage('build') {
           agent {
