@@ -26,7 +26,6 @@ pipeline {
           agent {
             docker {
               image 'python:3.7.2'
-              args '-v /root/.m2/repository:/root/.m2/repository'
             }
 
           }
