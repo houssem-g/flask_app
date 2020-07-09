@@ -41,7 +41,7 @@
         <source class="org.jenkinsci.plugins.github_branch_source.GitHubSCMSource" plugin="github-branch-source@2.8.2">
           <id>blueocean</id>
           <apiUri>https://api.github.com</apiUri>
-          <credentialsId>github</credentialsId>
+          <credentialsId>046bcb13-a2a3-4de6-ac66-72147d07c12b</credentialsId>
           <repoOwner>houssem-g</repoOwner>
           <repository>flask_app</repository>
           <repositoryUrl>https://github.com/houssem-g/flask_app</repositoryUrl>

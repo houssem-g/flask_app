@@ -24,7 +24,7 @@
               <name>origin</name>
               <refspec>+refs/heads/jenkins:refs/remotes/origin/jenkins</refspec>
               <url>https://github.com/houssem-g/flask_app.git</url>
-              <credentialsId>github</credentialsId>
+              <credentialsId>046bcb13-a2a3-4de6-ac66-72147d07c12b</credentialsId>
             </hudson.plugins.git.UserRemoteConfig>
           </userRemoteConfigs>
           <branches class="singleton-list">

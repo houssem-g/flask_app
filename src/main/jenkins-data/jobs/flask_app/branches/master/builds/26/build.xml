@@ -1,0 +1,119 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@2.39">
+  <actions>
+    <org.jenkinsci.plugins.workflow.cps.replay.ReplayFlowFactoryAction plugin="workflow-cps@2.80">
+      <replacementMainScript>pipeline {
+  agent any
+  stages {
+    stage(&apos;SCM&apos;) {
+      steps {
+        echo &apos;hello world&apos;
+      }
+    }
+
+    stage(&apos;run&apos;) {
+      parallel {
+        stage(&apos;build&apos;) {
+          agent {
+            docker {
+              args &apos;-v /root/.m2/repository:/root/.m2/repository&apos;
+              image &apos;maven:3-alpine&apos;
+            }
+
+          }
+          steps {
+            sh &apos;mvn clean compile&apos;
+          }
+        }
+
+        stage(&apos;test&apos;) {
+          agent {
+            docker {
+              image &apos;python:3.7.2&apos;
+            }
+
+          }
+          steps {
+            sh &apos;python test.py&apos;
+          }
+        }
+
+      }
+    }
+
+  }
+  environment {
+    scm = &apos;master&apos;
+  }
+}</replacementMainScript>
+      <replacementLoadedScripts/>
+    </org.jenkinsci.plugins.workflow.cps.replay.ReplayFlowFactoryAction>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause/>
+          <int>1</int>
+        </entry>
+        <entry>
+          <org.jenkinsci.plugins.workflow.cps.replay.ReplayCause plugin="workflow-cps@2.80">
+            <originalNumber>25</originalNumber>
+          </org.jenkinsci.plugins.workflow.cps.replay.ReplayCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <jenkins.scm.api.SCMRevisionAction plugin="scm-api@2.6.3">
+      <sourceId>blueocean</sourceId>
+      <revision class="jenkins.plugins.git.AbstractGitSCMSource$SCMRevisionImpl" plugin="git@4.3.0">
+        <head class="org.jenkinsci.plugins.github_branch_source.BranchSCMHead" plugin="github-branch-source@2.8.2">
+          <name>master</name>
+        </head>
+        <hash>b5eacb9cea3c174d879dadd55b22a850a4024437</hash>
+      </revision>
+    </jenkins.scm.api.SCMRevisionAction>
+    <jenkins.scm.api.SCMRevisionAction plugin="scm-api@2.6.3">
+      <sourceId>blueocean</sourceId>
+      <revision class="jenkins.plugins.git.AbstractGitSCMSource$SCMRevisionImpl" plugin="git@4.3.0">
+        <head class="org.jenkinsci.plugins.github_branch_source.BranchSCMHead" reference="../../../jenkins.scm.api.SCMRevisionAction/revision/head"/>
+        <hash>b5eacb9cea3c174d879dadd55b22a850a4024437</hash>
+      </revision>
+    </jenkins.scm.api.SCMRevisionAction>
+    <jenkins.scm.api.SCMRevisionAction plugin="scm-api@2.6.3">
+      <sourceId>blueocean</sourceId>
+      <revision class="jenkins.plugins.git.AbstractGitSCMSource$SCMRevisionImpl" plugin="git@4.3.0">
+        <head class="org.jenkinsci.plugins.github_branch_source.BranchSCMHead" reference="../../../jenkins.scm.api.SCMRevisionAction/revision/head"/>
+        <hash>a7baddf0e7097f0e99e6024ed704f09e64335066</hash>
+      </revision>
+    </jenkins.scm.api.SCMRevisionAction>
+    <jenkins.scm.api.SCMRevisionAction plugin="scm-api@2.6.3">
+      <sourceId>blueocean</sourceId>
+      <revision class="jenkins.plugins.git.AbstractGitSCMSource$SCMRevisionImpl" plugin="git@4.3.0">
+        <head class="org.jenkinsci.plugins.github_branch_source.BranchSCMHead" reference="../../../jenkins.scm.api.SCMRevisionAction/revision/head"/>
+        <hash>091cbae39fb2f5682c5035de86e1ac52f9f53c68</hash>
+      </revision>
+    </jenkins.scm.api.SCMRevisionAction>
+    <jenkins.scm.api.SCMRevisionAction plugin="scm-api@2.6.3">
+      <sourceId>blueocean</sourceId>
+      <revision class="jenkins.plugins.git.AbstractGitSCMSource$SCMRevisionImpl" plugin="git@4.3.0">
+        <head class="org.jenkinsci.plugins.github_branch_source.BranchSCMHead" reference="../../../jenkins.scm.api.SCMRevisionAction/revision/head"/>
+        <hash>0ff2447f7dc5c721c3327ef5eddbe9e9506b5f64</hash>
+      </revision>
+    </jenkins.scm.api.SCMRevisionAction>
+    <jenkins.scm.api.SCMRevisionAction plugin="scm-api@2.6.3">
+      <sourceId>blueocean</sourceId>
+      <revision class="jenkins.plugins.git.AbstractGitSCMSource$SCMRevisionImpl" plugin="git@4.3.0">
+        <head class="org.jenkinsci.plugins.github_branch_source.BranchSCMHead" reference="../../../jenkins.scm.api.SCMRevisionAction/revision/head"/>
+        <hash>0ff2447f7dc5c721c3327ef5eddbe9e9506b5f64</hash>
+      </revision>
+    </jenkins.scm.api.SCMRevisionAction>
+  </actions>
+  <queueId>29</queueId>
+  <timestamp>1594323108585</timestamp>
+  <startTime>1594323108764</startTime>
+  <result>FAILURE</result>
+  <duration>2654</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <completed>true</completed>
+  <checkouts class="hudson.util.PersistedList"/>
+</flow-build>
