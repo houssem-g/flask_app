@@ -38,12 +38,13 @@ pipeline {
     }
 
   }
-  post { 
-    always { 
-        cleanWs()
-    }
-  }
   environment {
     scm = 'master'
+  }
+  post {
+    always {
+      cleanWs()
+    }
+
   }
 }
