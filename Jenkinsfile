@@ -30,7 +30,7 @@ pipeline {
 
           }
           steps {
-            sh "./job.sh"
+            sh './job.sh'
           }
         }
 
