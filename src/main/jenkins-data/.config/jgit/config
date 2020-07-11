@@ -1,0 +1,3 @@
+[filesystem "IcedTea|1.8.0_212|grpcfuse"]
+	timestampResolution = 1001 milliseconds
+	minRacyThreshold = 0 nanoseconds

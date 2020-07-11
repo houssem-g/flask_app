@@ -19,3 +19,7 @@ EXPOSE 5000
 
 
 CMD ["flask", "run", "--host", "0.0.0.0"]
+
+        # volumes: 
+        #     - ./jenkins-data:/var/jenkins_home
+        #     - /var/run/docker.sock:/var/run/docker.sock

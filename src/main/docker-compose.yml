@@ -5,12 +5,9 @@ services:
     jenkins: 
         image: jenkinsci/blueocean
         user: "root"
-        # https://stackoverflow.com/questions/38105308/jenkins-cant-connect-to-docker-daemon
         volumes: 
             - ./jenkins-data:/var/jenkins_home
             - /var/run/docker.sock:/var/run/docker.sock
-            # - /c/Program Files/Git:/var/Git
-            # - ./:/home
         ports: 
             - "8080:8080"
 
