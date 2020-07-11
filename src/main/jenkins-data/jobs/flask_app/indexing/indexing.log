@@ -1,6 +1,6 @@
 Started by user [8mha:////4IcCdNrCrUGpblb1LceIFfxMTnQxzEmdLh0vikph0r6MAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZe/dLi1CL9jPzS4uLUXABkn/HfwgAAAA==[0mhoussem
-[Sat Jul 11 13:41:08 GMT 2020] Starting branch indexing...
-[8mha:////4MtipEe1M2rYUGCUfExnnZpvvIvV4Sa83ltnOgptqVNbAAAAhB+LCAAAAAAAAP9b85aBtbiIwSa/KF0vKzUvOzOvODlTryCnNB3I0kvPLMkoTYpPKkrMS86IL84vLUpO1XPPLPEoTXLOzyvOz0n1yy9JZYAARiYGRi8GzpLM3NTiksTcgooiBqmM0pTi/Dy9ZIhiPayaGCoKgHSxnfQWPQDgHKHDjgAAAA==[0mConnecting to https://api.github.com using houssem/****** (GitHub Access Token)
+[Sat Jul 11 14:14:11 GMT 2020] Starting branch indexing...
+[8mha:////4CrNBKtZD8ifwRBsH8/4vyQyxSORLhanymorBNsSM+GgAAAAhB+LCAAAAAAAAP9b85aBtbiIwSa/KF0vKzUvOzOvODlTryCnNB3I0kvPLMkoTYpPKkrMS86IL84vLUpO1XPPLPEoTXLOzyvOz0n1yy9JZYAARiYGRi8GzpLM3NTiksTcgooiBqmM0pTi/Dy9ZIhiPayaGCoKgHSxneVnFwDq3zfqjgAAAA==[0mConnecting to https://api.github.com using houssem/****** (GitHub Access Token)
 Examining [8mha:////4BNLQJvjHyGL2QwGViVVRle2DqLOdMwXOH4PA4OZWdb2AAAAph+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMgQLmFQyygpKSi20tdPzyzJKE0C6srVz8gvLS5OzdVN10/LSSzOjk8sKAAAmORLwKsAAAA=[0mhoussem-g/flask_app
 
   Checking branches...
@@ -10,7 +10,7 @@ Examining [8mha:////4BNLQJvjHyGL2QwGViVVRle2DqLOdMwXOH4PA4OZWdb2AAAAph+LCAAAAAA
     Checking branch [8mha:////4IjXytV2F263LG7oEiNBhN3mDWo8qPh5XNvqT0bAgucxAAAAsB+LCAAAAAAAAP9djLENwjAQRY8gMgAlYgVyEgUFKBUNSBENAyADhx3i2JbvgsIarAENQzAOOxBEx2v+a/57vGHAEcamObJ32cE79pay1TVQtKWrNl5olt+f+S28EkjWkFpyWkwB/SZagWFxVheFVjmNW4ml04s2wugvt/ztNwY/eglAGzpJBaZGJPAcUZdimn33qtH4hpnqicaTVVztVAgokQhrxULxA+Vb0DO3AAAA[0mmaster
       ‘Jenkinsfile’ found
     Met criteria
-Changes detected: master (324bcb67ace04e70f1cabba8d21399dee5edb080 → 32a57c99beb99208e78e2c522a3942a9e665a529)
+Changes detected: master (32a57c99beb99208e78e2c522a3942a9e665a529 → f6a5be8d3ae36cc16157034600ef608b361af07f)
 Scheduled build for branch: master
 
     Checking branch [8mha:////4CphWHhzfBgHwUWgGdnDvJv88PePdW9CFnPHUpa2482wAAAAsR+LCAAAAAAAAP9djLENwjAQRY8goKdErECuQKIApaIBKaJhAGTgsJM4tmWfUViDNaBhCMZhB4LS8Zr/mv+eHxgED1MVz8Ga9GRNsJrSzc2R14WpdpZpkT1e2d29E0i2MNRkJKsc+tFrhnFeiqtALYzEPfvCyFXjYfKXW3f7i0FHLwFoXCsjhrlidmGJKAtW8di+alQ2hkD1TOJFi1AdhHPInghLMlVhwhfhisOhuAAAAA==[0mjenkins
@@ -28,5 +28,5 @@ No changes detected: jenkins (still at 7cf6ec097c29bcbb4b1f6c3eb1fc5b936daeec5a)
 
 Finished examining houssem-g/flask_app
 
-[Sat Jul 11 13:41:14 GMT 2020] Finished branch indexing. Indexing took 5.6 sec
+[Sat Jul 11 14:14:16 GMT 2020] Finished branch indexing. Indexing took 4.8 sec
 Finished: SUCCESS
