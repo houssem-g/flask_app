@@ -30,7 +30,7 @@ pipeline {
 
           }
           steps {
-            bat "testfilepy.bat"
+            sh "./job.sh"
           }
         }
 

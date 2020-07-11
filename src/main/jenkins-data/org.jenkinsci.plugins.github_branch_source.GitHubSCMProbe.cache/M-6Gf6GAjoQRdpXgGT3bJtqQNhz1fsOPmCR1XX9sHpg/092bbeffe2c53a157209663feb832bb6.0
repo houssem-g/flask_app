@@ -5,21 +5,20 @@ Authorization: Basic aG91c3NlbTo1YmY2NjJiMWExNDkxYjJlMTA1M2IzMTQxMDFmNWEwYWVmN2V
 Accept-Encoding: gzip
 HTTP/1.1 200 OK
 28
+Date: Sat, 11 Jul 2020 10:38:23 GMT
 Content-Type: application/json; charset=utf-8
 Transfer-Encoding: chunked
+Server: GitHub.com
+Status: 200 OK
+X-RateLimit-Limit: 5000
+X-RateLimit-Remaining: 4990
+X-RateLimit-Reset: 1594467449
+Cache-Control: private, max-age=60, s-maxage=60
+Vary: Accept, Authorization, Cookie, X-GitHub-OTP
+ETag: W/"3986aa7a6f7072833f875bd68f469056"
 X-OAuth-Scopes: admin:enterprise, admin:gpg_key, admin:org, admin:org_hook, admin:public_key, admin:repo_hook, delete:packages, gist, notifications, read:packages, repo, user, workflow, write:discussion, write:packages
 X-Accepted-OAuth-Scopes: 
 X-GitHub-Media-Type: github.v3; format=json
-Content-Encoding: gzip
-Date: Sat, 11 Jul 2020 09:21:39 GMT
-Server: GitHub.com
-Status: 304 Not Modified
-X-RateLimit-Limit: 5000
-X-RateLimit-Remaining: 4987
-X-RateLimit-Reset: 1594462869
-Cache-Control: private, max-age=60, s-maxage=60
-Vary: Accept, Authorization, Cookie, X-GitHub-OTP
-ETag: "f6297ab9ac34b0548430d3173aa0df46"
 Access-Control-Expose-Headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset
 Access-Control-Allow-Origin: *
 Strict-Transport-Security: max-age=31536000; includeSubdomains; preload
@@ -29,10 +28,11 @@ X-XSS-Protection: 1; mode=block
 Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin
 Content-Security-Policy: default-src 'none'
 Vary: Accept-Encoding, Accept, X-Requested-With
+Content-Encoding: gzip
 Vary: Accept-Encoding
-X-GitHub-Request-Id: C4C2:FF22:654CBDE:794B2F6:5F0984A3
-OkHttp-Sent-Millis: 1594459298611
-OkHttp-Received-Millis: 1594459298793
+X-GitHub-Request-Id: C8D0:7D36:6651FB3:79EE13D:5F09969F
+OkHttp-Sent-Millis: 1594463902087
+OkHttp-Received-Millis: 1594463902361
 
 TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
 2
