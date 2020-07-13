@@ -7,7 +7,6 @@ pipeline {
       }
     }
 
-
     stage('build') {
       agent {
         docker {
@@ -32,8 +31,6 @@ pipeline {
         sh './job.sh'
       }
     }
-
-
 
   }
   environment {
