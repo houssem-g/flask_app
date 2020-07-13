@@ -5,18 +5,18 @@ Authorization: Basic aG91c3NlbTo1YmY2NjJiMWExNDkxYjJlMTA1M2IzMTQxMDFmNWEwYWVmN2V
 Accept-Encoding: gzip
 HTTP/1.1 200 OK
 30
-Date: Sat, 11 Jul 2020 15:52:24 GMT
+Date: Mon, 13 Jul 2020 14:37:28 GMT
 Content-Type: application/json; charset=utf-8
 Transfer-Encoding: chunked
 Server: GitHub.com
 Status: 200 OK
 X-RateLimit-Limit: 5000
-X-RateLimit-Remaining: 4979
-X-RateLimit-Reset: 1594484904
+X-RateLimit-Remaining: 4985
+X-RateLimit-Reset: 1594654499
 Cache-Control: private, max-age=60, s-maxage=60
 Vary: Accept, Authorization, Cookie, X-GitHub-OTP
-ETag: W/"92b0844732758b29dd63b8cfe5520e32"
-Last-Modified: Sat, 11 Jul 2020 15:52:17 GMT
+ETag: W/"0522a6a7a2608a77d61f57f4331b2044"
+Last-Modified: Mon, 13 Jul 2020 14:37:20 GMT
 X-Poll-Interval: 300
 X-OAuth-Scopes: admin:enterprise, admin:gpg_key, admin:org, admin:org_hook, admin:public_key, admin:repo_hook, delete:packages, gist, notifications, read:packages, repo, user, workflow, write:discussion, write:packages
 X-Accepted-OAuth-Scopes: repo
@@ -32,9 +32,9 @@ Content-Security-Policy: default-src 'none'
 Vary: Accept-Encoding, Accept, X-Requested-With
 Content-Encoding: gzip
 Vary: Accept-Encoding
-X-GitHub-Request-Id: D42C:50FC:726A5E0:8894A5F:5F09E037
-OkHttp-Sent-Millis: 1594482741948
-OkHttp-Received-Millis: 1594482742150
+X-GitHub-Request-Id: D36B:ABBA:C1927C:EA2DE1:5F0C71A8
+OkHttp-Sent-Millis: 1594651048150
+OkHttp-Received-Millis: 1594651048376
 
 TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
 2
