@@ -37,7 +37,7 @@ pipeline {
 
   }
   environment {
-    scm = 'master'
+    scm = 'jenkins'
   }
   post {
     always {
