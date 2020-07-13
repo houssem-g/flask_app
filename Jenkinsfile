@@ -12,7 +12,6 @@ pipeline {
         stage('build') {
           agent {
             docker {
-              args '-v /root/.m2/repository:/root/.m2/repository'
               image 'python:3.7.2'
             }
 
@@ -40,7 +39,7 @@ pipeline {
 
   }
   environment {
-    scm = 'master'
+    scm = 'jenkins'
   }
   post {
     always {
