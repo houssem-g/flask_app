@@ -13,12 +13,13 @@ pipeline {
           agent {
             docker {
               args '-v /root/.m2/repository:/root/.m2/repository'
-              image 'maven:3-alpine'
+              image 'python:3.7.2'
             }
 
           }
           steps {
-            sh 'mvn clean compile'
+            sh 'pip install -r requirements.txt'
+            sh 'python3 ./src/main/ressource/app.py'
           }
         }
 

@@ -11,29 +11,29 @@ services:
         ports: 
             - "8080:8080"
 
-    app:
-        build: ./ressource
-        env_file: 
-            - .env
-        depends_on:
-            - db
-        ports:
-            - "5001:5001"
-        restart: always
+    # app:
+    #     build: ./ressource
+    #     env_file: 
+    #         - .env
+    #     depends_on:
+    #         - db
+    #     ports:
+    #         - "5000:5000"
+    #     restart: always
 
 
       
-    db:
-        restart: always
-        container_name: "postgresql"
-        image: postgres
-        ports:
-            - "5433:5433"
+    # db:
+    #     restart: always
+    #     container_name: "postgresql"
+    #     image: postgres
+    #     ports:
+    #         - "5433:5433"
         
-        environment:
-            POSTGRES_PASSWORD: "superUser123"
-            POSTGRES_USER: "postgres"
-            POSTGRES_DB: "postgres"
+    #     environment:
+    #         POSTGRES_PASSWORD: "superUser123"
+    #         POSTGRES_USER: "postgres"
+    #         POSTGRES_DB: "postgres"
             
 
 
