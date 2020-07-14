@@ -1,0 +1,26 @@
+# base image
+FROM python:3-alpine
+
+# install dependencies
+RUN apk update \
+    && apk add --virtual build-deps gcc python3-dev musl-dev \
+    && apk add postgresql-dev \
+    && pip install psycopg2-binary \
+    && apk del build-deps
+
+ENV FLASK_APP=app.py
+COPY . /app
+
+WORKDIR /app
+
+RUN pip install -r requirements.txt
+ADD . /app
+ADD . . 
+
+
+EXPOSE 5000
+
+
+
+CMD ["flask", "run", "--host", "0.0.0.0"]
+
