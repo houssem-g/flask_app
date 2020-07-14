@@ -17,7 +17,7 @@ pipeline {
     }
     stage("run docker container"){
       steps {
-        sh "sudo docker run -p 5000:5000 --name app -d app "
+        sh "sudo docker run --name container-app -p 5000:5000  flask-app "
       }
         
     }
