@@ -35,8 +35,6 @@ pipeline {
       }
     }
 
-
-
   }
   environment {
     scm = 'jenkins'
