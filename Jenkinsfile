@@ -7,19 +7,22 @@ pipeline {
       }
     }
 
-
     stage('build docker') {
+      agent {
+        dockerfile {
+          filename 'Dockerfile'
+        }
 
+      }
       steps {
-        
         sh 'sudo docker build -t flask-app .'
       }
     }
-    stage("run docker container"){
+
+    stage('run docker container') {
       steps {
-        sh "sudo docker run --name container-app -p 5000:5000  flask-app "
+        sh 'sudo docker run --name container-app -p 5000:5000  flask-app '
       }
-        
     }
 
     stage('test') {
@@ -46,4 +49,3 @@ pipeline {
 
   }
 }
-
