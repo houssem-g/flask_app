@@ -8,14 +8,8 @@ pipeline {
     }
 
     stage('build docker') {
-      agent {
-        dockerfile {
-          filename 'Dockerfile'
-        }
-
-      }
       steps {
-        echo 'build image docker'
+        echo 'docker build -t flask-app .'
       }
     }
 
