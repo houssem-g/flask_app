@@ -15,7 +15,7 @@ pipeline {
 
       }
       steps {
-        sh 'sudo docker build -t flask-app .'
+        echo 'build image docker'
       }
     }
 
