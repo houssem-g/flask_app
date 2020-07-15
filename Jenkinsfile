@@ -13,12 +13,6 @@ pipeline {
       }
     }
 
-    stage('run docker container') {
-      steps {
-        sh 'docker run --name container-app -p 5000:5000  flask-app '
-      }
-    }
-
     stage('test') {
       agent {
         docker {
