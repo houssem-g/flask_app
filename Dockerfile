@@ -4,7 +4,7 @@ FROM python:3-alpine
 # install dependencies
 RUN apk update \
     && apk add build-base \
-    && apk add -y install gcc \
+    && apk add install gcc \
     && apk add --virtual build-deps gcc python3-dev musl-dev \
     && apk add postgresql-dev \
     && pip install psycopg2-binary \
