@@ -7,13 +7,31 @@ pipeline {
       }
     }
 
-    stage('build docker') {
+    stage('Install python') {
       steps {
-        sh 'docker build -t flask-app .'
+        sh 'print(python installed)'
       }
     }
 
-    stage('test') {
+    stage('Build docker') {
+      parallel {
+        stage('build docker') {
+          steps {
+            sh 'docker build -t flask-app .'
+          }
+        }
+
+        stage('Quality code') {
+          steps {
+            sh 'pip install pylint'
+            sh 'pylint ./app/app.py'
+          }
+        }
+
+      }
+    }
+
+    stage('Test code') {
       agent {
         docker {
           image 'python:3.7.2'
@@ -23,13 +41,6 @@ pipeline {
       steps {
         sh 'pip install -r ./app/requirements.txt'
         sh 'python3 ./app/test.py'
-      }
-    }
-
-    stage('') {
-      steps {
-        sh 'pip install -r ./app/requirements.txt'
-        sh 'pylint ./app/app.py'
       }
     }
 
