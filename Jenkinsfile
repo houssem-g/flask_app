@@ -17,8 +17,7 @@ pipeline {
 
         stage('Quality code') {
           steps {
-            sh 'pip3 install pylint'
-            sh 'pylint ./app/app.py'
+            sh './job.sh'
           }
         }
 
