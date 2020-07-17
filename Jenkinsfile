@@ -35,6 +35,7 @@ pipeline {
 
           }
           steps {
+            sh 'pip install pylint'
             sh 'pylint ./app/app.py'
           }
         }
