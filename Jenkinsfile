@@ -8,8 +8,20 @@ pipeline {
     }
 
     stage('build docker') {
-      steps {
-        sh 'docker build -t flask-app .'
+      parallel {
+        stage('build docker') {
+          steps {
+            sh 'docker build -t flask-app .'
+          }
+        }
+
+        stage('Quality code') {
+          steps {
+            sh 'pip install -r ./app/requirements.txt'
+            sh 'pylint ./app/app.py'
+          }
+        }
+
       }
     }
 
