@@ -15,7 +15,7 @@ pipeline {
 
       }
       steps {
-        sh 'print(python installed)'
+        sh 'print("python is ready now")'
       }
     }
 
