@@ -28,8 +28,13 @@ pipeline {
         }
 
         stage('Quality code') {
+          agent {
+            docker {
+              image 'python:3.7.2'
+            }
+
+          }
           steps {
-            sh 'pip install pylint'
             sh 'pylint ./app/app.py'
           }
         }
