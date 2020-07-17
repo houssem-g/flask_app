@@ -15,7 +15,7 @@ pipeline {
 
       }
       steps {
-        sh 'print("python is ready now")'
+        echo 'Python is ready now !!'
       }
     }
 
