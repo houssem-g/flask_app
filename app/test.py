@@ -4,8 +4,8 @@ import app
 
 class TestHello(unittest.TestCase):
     def setUp(self):
-        app.app.testing = True
-        self.app = app.app.test_client()
+        app.APP.testing = True
+        self.app = app.APP.test_client()
 
     def test_main(self):
         rv = self.app.get('/')
