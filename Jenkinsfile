@@ -12,7 +12,7 @@ pipeline {
     stage('Test Unitary') {
       agent {
         docker {
-          image 'docker\'compose'
+          image 'docker-compose.yml'
         }
 
       }
