@@ -1,4 +1,6 @@
 pipeline {
+  environment {
+        PATH = "$PATH:c:/Program Files/Docker/Docker/resources/bin"
   agent any
   stages {
     stage('SCM') {
