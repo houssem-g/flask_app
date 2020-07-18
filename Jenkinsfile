@@ -1,21 +1,9 @@
 pipeline {
-  environment {
-        PATH = "$PATH:c:/Program Files/Docker/Docker/resources/bin"
-  }
   agent any
   stages {
     stage('SCM') {
       steps {
         echo 'hello world'
-      }
-    }
-
-    stage('Test Unitary') {
-
-
-      
-      steps {
-        sh 'docker-compose up app'
       }
     }
 
@@ -41,6 +29,12 @@ pipeline {
           }
         }
 
+      }
+    }
+
+    stage('Test Unitary') {
+      steps {
+        sh 'docker-compose up app'
       }
     }
 
