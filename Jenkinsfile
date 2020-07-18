@@ -41,6 +41,7 @@ pipeline {
       }
       steps {
         sh 'pip install -r ./app/requirements.txt'
+        sh 'docker build -t postgresql -f Dockerfile.db .'
         sh 'python3 ./app/test.py'
       }
     }
