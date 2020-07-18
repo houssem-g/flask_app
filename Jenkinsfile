@@ -34,15 +34,13 @@ pipeline {
 
     stage('Test code') {
       agent {
-        docker {
-          image 'python:3.7.2'
+        dockerfile {
+          filename 'Dockerfile.db'
         }
 
       }
       steps {
-        sh 'pip install -r ./app/requirements.txt'
-        sh 'docker build -f ./Dockerfile.db .'
-        sh 'python3 ./app/test.py'
+        echo 'DB Connexion setup'
       }
     }
 
