@@ -52,7 +52,7 @@ pipeline {
 
       }
       steps {
-        sh 'pip insall -r ./app/requirements.txt'
+        sh 'pip install -r ./app/requirements.txt'
         sh 'python3 ./app/test.py'
       }
     }
