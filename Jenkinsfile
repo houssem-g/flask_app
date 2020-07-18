@@ -7,18 +7,6 @@ pipeline {
       }
     }
 
-    stage('Install python') {
-      agent {
-        docker {
-          image 'python:3.7.2'
-        }
-
-      }
-      steps {
-        echo 'Python is ready now !!'
-      }
-    }
-
     stage('Build docker') {
       parallel {
         stage('build docker') {
