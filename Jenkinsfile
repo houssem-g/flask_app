@@ -9,6 +9,18 @@ pipeline {
       }
     }
 
+    stage('Test Unitary') {
+      agent {
+        docker {
+          image 'docker\'compose'
+        }
+
+      }
+      steps {
+        echo 'Good'
+      }
+    }
+
     stage('Build docker') {
       parallel {
         stage('build docker') {
@@ -31,12 +43,6 @@ pipeline {
           }
         }
 
-      }
-    }
-
-    stage('Test Unitary') {
-      steps {
-        sh 'docker-compose up app'
       }
     }
 
