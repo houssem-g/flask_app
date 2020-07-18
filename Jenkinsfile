@@ -8,8 +8,14 @@ pipeline {
     }
 
     stage('Test Unitary') {
+      agent {
+        docker {
+          image 'docker\'compose'
+        }
+
+      }
       steps {
-        sh 'docker-compose up app'
+        echo 'Good'
       }
     }
 
