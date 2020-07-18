@@ -33,12 +33,6 @@ pipeline {
     }
 
     stage('Test Unitary') {
-      agent {
-        docker {
-          image 'python:3.7.2'
-        }
-
-      }
       steps {
         sh 'pip install -r ./app/requirements.txt'
         sh 'docker-compose up app'
