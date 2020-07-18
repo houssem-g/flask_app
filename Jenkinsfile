@@ -32,7 +32,7 @@ pipeline {
       }
     }
 
-    stage('Test code') {
+    stage('Setup DB') {
       agent {
         dockerfile {
           filename 'Dockerfile.db'
@@ -41,6 +41,19 @@ pipeline {
       }
       steps {
         echo 'DB Connexion setup'
+      }
+    }
+
+    stage('Test Unitary') {
+      agent {
+        docker {
+          image 'python:3.7.2'
+        }
+
+      }
+      steps {
+        sh 'pip insall -r ./app/requirements.txt'
+        sh 'python3 ./app/test.py'
       }
     }
 
