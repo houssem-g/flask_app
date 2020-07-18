@@ -9,7 +9,7 @@ pipeline {
 
     stage('Test Unitary') {
       steps {
-        sh '/usr/local/bin/docker-compose -f ./docker-compose.yml exec -T test'
+        sh 'docker-compose up app'
       }
     }
 
@@ -41,7 +41,6 @@ pipeline {
   }
   environment {
     scm = 'jenkins'
-    PATH = "$PATH:c:/Program Files/Docker/Docker/resources/bin"
   }
   post {
     always {
