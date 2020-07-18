@@ -7,18 +7,6 @@ pipeline {
       }
     }
 
-    stage('Install python') {
-      agent {
-        docker {
-          image 'python:3.7.2'
-        }
-
-      }
-      steps {
-        echo 'Python is ready now !!'
-      }
-    }
-
     stage('Build docker') {
       parallel {
         stage('build docker') {
@@ -45,12 +33,6 @@ pipeline {
     }
 
     stage('Test code') {
-      agent {
-        docker {
-          image 'python:3.7.2'
-        }
-
-      }
       steps {
         sh 'pip install -r ./app/requirements.txt'
         sh 'python3 ./app/test.py'
