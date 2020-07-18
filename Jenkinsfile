@@ -41,7 +41,7 @@ pipeline {
       }
       steps {
         sh 'pip install -r ./app/requirements.txt'
-        sh 'python3 ./app/test.py'
+        sh 'docker-compose up app'
       }
     }
 
