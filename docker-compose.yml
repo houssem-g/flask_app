@@ -3,7 +3,9 @@ version: "3"
 services:
 
     jenkins: 
-        image: jenkins/jenkins
+        build: 
+            context: .
+            dockerfile: Dockerfile.jen
         user: "root"
         volumes: 
             - ./jenkins-data:/var/jenkins_home
