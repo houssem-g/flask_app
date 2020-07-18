@@ -32,7 +32,19 @@ pipeline {
       }
     }
 
-    stage('Test code') {
+    stage('Setup DB') {
+      agent {
+        dockerfile {
+          filename 'Dockerfile.db'
+        }
+
+      }
+      steps {
+        echo 'DB Connexion setup'
+      }
+    }
+
+    stage('Test Unitary') {
       agent {
         docker {
           image 'python:3.7.2'
