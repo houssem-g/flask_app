@@ -34,7 +34,6 @@ pipeline {
 
     stage('Test Unitary') {
       steps {
-        sh 'pip install -r ./app/requirements.txt'
         sh 'docker-compose up app'
       }
     }
