@@ -9,7 +9,7 @@ pipeline {
 
     stage('Test Unitary') {
       steps {
-        sh 'docker-compose -f {docker-compose} up app'
+        sh '/usr/local/bin/docker-compose -f ./docker-compose.yml exec -T test'
       }
     }
 
