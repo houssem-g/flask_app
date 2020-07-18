@@ -9,7 +9,7 @@ APP = Flask(__name__)
 CORS(APP)
 CONN = psycopg2.connect(
     user="postgres", password="root",
-    host='localhost', port="5432", database="postgres"
+    host='192.168.0.20', port="5432", database="postgres"
 )
 CURSOR = CONN.cursor()
 @APP.route('/')

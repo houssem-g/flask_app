@@ -13,15 +13,15 @@ services:
         depends_on:
             - db
 
-    # app:
-    #     build: ./app
-    #     env_file: 
-    #         - .env
-    #     depends_on:
-    #         - db
-    #     ports:
-    #         - "5000:5000"
-    #     restart: always
+    app:
+        build: app
+        env_file: 
+            - .env
+        depends_on:
+            - db
+        ports:
+            - "5000:5000"
+        restart: always
 
 
       
