@@ -10,14 +10,11 @@ pipeline {
     }
 
     stage('Test Unitary') {
-      agent {
-        docker {
-          image 'docker-compose.yml'
-        }
 
-      }
+
+      
       steps {
-        echo 'Good'
+        sh 'docker-compose up app'
       }
     }
 
