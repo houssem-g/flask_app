@@ -7,12 +7,6 @@ pipeline {
       }
     }
 
-    stage('Test Unitary') {
-      steps {
-        sh 'docker-compose up app'
-      }
-    }
-
     stage('Build docker') {
       parallel {
         stage('build docker') {
@@ -35,6 +29,12 @@ pipeline {
           }
         }
 
+      }
+    }
+
+    stage('Test Unitary') {
+      steps {
+        sh 'docker-compose up app'
       }
     }
 
